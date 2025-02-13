@@ -1,0 +1,1040 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0E0E0E !important;
+    font-family: "Inter", sans-serif;
+}
+
+.my-container {
+    padding: 0 32px;
+    width: 100%;
+    font-family: "Inter", sans-serif;
+}
+
+.divLeft {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden; /* oculta o excesso do vídeo */
+}
+
+#spaceText {
+    padding-right: 16px;
+}
+
+video {
+    width: 100%;
+    height: 150%;
+    scale: 150%;
+    transform: translate(10%, -10%); /* aplica o zoom */
+}
+
+.textDiv{
+   position: absolute;
+   top: 0;
+   left: 0;
+   display: flex;
+   width: 100%;
+   height: 100%;
+   padding: 0 32px;
+   align-items: center;
+   
+   color: #fff;
+}
+
+#informacoes { 
+    width: 100%;
+}
+
+#sacramentos {
+    color:#f6ab27;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+#titulo {
+    color:#ffffff;
+    font-family: "Inter", sans-serif;
+    font-size: 52px;
+    font-weight: 700;
+    width: 750px;
+    margin-bottom: 10px;
+    max-width: 21ch;
+}
+
+#sub-titulo {
+    color:#ffffff80;
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    width: 700px;
+    margin-bottom: 50px;
+}
+
+#apresentado {
+    color:#ffffff80;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+
+span {
+    color: white;
+}
+
+#subcompra {
+    display: flex;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#compra {
+    width: 360px;
+    height: 56px;
+    background-color: #2e6ac9;
+    border: transparent;
+    border-radius: 4px;
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 18px;
+}
+
+#trailer {
+    width: 85px;
+    height: 48px;
+    margin-right: 24px;
+   
+}
+
+#vertrailer {
+    background-color: transparent;
+    border: solid 1px #ffffff1a;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    padding-right: 24px !important;
+    align-items: center;
+    display: flex;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+#seta {
+    width: 16px;
+    height: 16px;
+    margin-right: 12px;
+}
+
+#avaliacao {
+    width: 300px;
+    height: 64px;
+    display: flex;
+    align-items: end;
+    color: #ffffffb3;
+    font-size: 14px;
+    flex-direction: column;
+}
+
+#nota {
+    margin-right: 12px;
+    margin-bottom: 0;
+    
+}
+
+#subestrelas {
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+#star {
+    margin-right: 4px;
+}
+
+#star2 {
+    margin-right: 24px;
+}
+
+#pessoas {
+    border-radius: 50%;
+    width: 30px;
+    margin-left: -17px;
+}
+
+#pessoa2 {
+    border-radius: 100px;
+    width: 30px;
+    height: 30px;
+    border: solid 1.5px white;
+    margin-left: -17px;
+    background-color: #3f3f3f;
+    justify-content: center;
+    display: flex;
+    padding: auto;
+    align-items: center;
+}
+
+#mais {
+    width: 18px;
+}
+
+#relevancia {
+    position: relative;
+    display: flex;
+    margin-top: -14px;
+    align-items: center;
+    width: 100%;
+    padding: 0 32px;
+    margin-bottom: 80px;
+    font: 18px !important;
+
+}
+
+#linha {
+    background-color: #d0d5dd10;
+    width: 100%;
+    height: 1px;
+}
+
+#subtexto {
+    color: #ffffff80;
+    letter-spacing: -.01rem;
+    font-size: 16px !important;
+    font-weight: 400 !important;
+    line-height: 1.6;
+}
+
+h3 {
+    font-family: "Inter", sans-serif !important;
+    font-size: 20px !important;
+    color: white !important;
+    margin-bottom: 18px !important;
+}
+
+#cardimg {
+    width: 100%;
+    margin-bottom: 18px;
+    border-radius: 4px;
+}
+
+#concerto {
+    align-items: center;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#container {
+    padding-top: 80px;
+    width: 50%;
+}
+
+#container-novo {
+    padding-top: 80px;
+    width: 50%;
+}
+
+#aulas {
+    display: flex;
+    align-items: center;
+    border: solid 1px #ffffff36;
+    padding: 6px 10px;
+    border-radius: 5px;
+}
+
+#container-fluido {
+    padding: 16px 4px;
+    position: relative; /* Fica dentro de container-novo */
+    box-sizing: border-box;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.sticky {
+    position: fixed;
+    top: 0; /* Fica fixada no topo da tela */
+    left: 40px;
+    right: 40px;
+    z-index: 9999;
+}
+
+.stopped {
+    position: absolute;
+    bottom: 0; /* Fica no fundo de container-novo */
+    left: 40px;
+    right: 40px;
+}
+
+
+#aulasbotao {
+    border: solid 1px #ffffff36;
+    color: #ffffffb3;
+    padding: 6px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+#titulo2 {
+  /* Primeiro passo: definir um degradê como fundo */
+  background-image: linear-gradient(135deg, #362ca8, #6594e0 50%) !important;
+  font-size: 30px;
+  /* Segundo passo: apagar do fundo tudo que não estiver imediatamente atrás de texto */
+  background-clip: text;
+  -webkit-background-clip: text; /* Alguns navegadores precisam do prefixo */
+  /* Terceiro passo: apagar o texto, deixando apenas o fundo atrás dele */
+  -webkit-text-fill-color: transparent;
+  /* Cor que contraste com o degradê, caso o navegador não suporte `background-clip: text` */
+  color: black;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+#mostrarmais {
+    background-color: #18191b;
+    border: 1px solid #ffffff1a;
+    justify-content: center;
+    width: 260px;
+    font-weight: 400;
+    color: #ffffffa4 !important;
+    max-width: 100%;
+    border-radius: 5px;
+    height: 48px;
+    padding: 12px 4px;
+    display: flex;
+    align-items: center;
+}
+
+#imgcards {
+    width: 140px;
+    border-radius: 5px;
+}
+
+#titulo2-mobile {
+    font-size: 0px;
+}
+
+#descricao-do-curso-mobile {
+    font-size: 0px;
+}
+
+#inscrição-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0);
+    font-size: 0px;
+    margin: 0px 0px;
+    width: 0px;
+    height: 0px;
+    background-color: #2e69c900;
+    border: solid 0px;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+#avaliações-grafico {
+    margin-top: 80px;
+    color: #a0a0a0 !important;
+    letter-spacing: 0 !important;
+    font-size: 18px !important;
+    font-weight: 500 !important;
+}
+
+#quatia-avaliacoes {
+    display: flex;
+    font-size: 14px;
+    border: solid #a0a0a0 1px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    padding: 2px;
+}
+
+#grafico {
+    margin-top: 12px;
+    display: flex;
+}
+
+#sub-grafico {
+    height: 24px;
+    width: 100%;
+    background-color: #313131;
+    border-radius: 4px;
+    margin-right: 16px;
+}
+
+#cor-grafico {
+    height: 100%;
+    width: 99%;
+    background-color: #fdac39;
+    border-radius: 4px 0px 0px 4px;
+}
+
+#estrela-amarela {
+    margin-right: 4px;
+}
+
+#porcentagem-grafico {
+    margin-left: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    width: 60px;
+    margin-bottom: 0px !important;
+}
+
+#container-feedback {
+    margin: 0;
+    padding-top: 100px;
+    grid-column-gap: 2%;
+
+}
+
+#container-1-feed {
+    width: 32%;
+    padding: 0px !important;
+}
+
+#container-2-feed {
+    width: 32%;
+    padding: 0px !important;
+}
+
+#container-3-feed {
+    width: 32%;
+    padding: 0px !important;
+}
+
+#feedback {
+    border: 1px solid #ffffff1a;
+    padding: 26px 24px 30px;
+    background-color: #18191b;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 24px;
+    color: #fff9;
+    font-size: 15px;
+    line-height: 165%;
+    
+}
+
+#texto-feedback {
+    color: #fff9;
+    font-size: 15px;
+    line-height: 165%;
+}
+
+#user-feedback {
+    color: #bbb;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+#texto-feedback-2 {
+    color: #fff9;
+    font-size: 15px;
+    line-height: 165%;
+}
+
+#user-feedback-2 {
+    color: #bbb;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+#texto-feedback-3 {
+    color: #fff9;
+    font-size: 15px;
+    line-height: 165%;
+}
+
+#user-feedback-3 {
+    color: #bbb;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+#mostrarmais-feedback {
+    background-color: #18191b;
+    border: 1px solid #ffffff1a;
+    justify-content: center;
+    width: 260px;
+    font-weight: 400;
+    color: #ffffffa4 !important;
+    max-width: 100%;
+    border-radius: 5px;
+    height: 48px;
+    padding: 12px 4px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    margin-top: -50px;
+}
+
+#setabaixo {
+    margin-left: 15px;
+    width: 12px;
+}
+
+#container-compra {
+    margin-top: 100px;
+}
+
+#heading-compra {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    margin-bottom: 64px;
+    text-align: center;
+}
+
+#titulo-pc-compra {
+    color: #fcfcfd;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(90deg, #f16e41, #ff5593);
+    background-clip: text;
+    font-size: 44px;
+    font-weight: 700;
+}
+
+#sub-titulo-pc-compra {
+    color: #ffffff80;
+    letter-spacing: 0;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#card-compra {
+    background-color: #fcfcfd;
+    width: 400px;
+    padding: 40px;
+    margin: auto;
+    border-radius: 12px;
+    color: #101828;
+}
+
+#texto-compra {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+#top-elementes-compra {
+    display: flex;
+    flex-direction: column;
+}
+
+#acesso-ao-grupo {
+    margin-bottom: 0px;
+}
+
+#durante-ano {
+    color: #101828;
+}
+
+#container-price {
+    display: flex;
+    align-items: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #c3cbd4
+}
+
+#parcelamento {
+    font-size: 24px;
+    margin-right: 8px;
+    line-height: 1;
+    margin-bottom: -14px;
+    font-weight: 800;
+}
+
+#text-price {
+    color: #101828;
+    letter-spacing: -1px;
+    margin-bottom: 4px;
+    font-family: Inter, sans-serif;
+    font-size: 52px;
+    font-weight: 700;
+}
+
+#text-price-cents {
+    color: #101828;
+    letter-spacing: -2px;
+    margin-bottom: -8px;
+    font-family: Inter, sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+#beneficios-pagamento {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+#container-beneficio {
+    display: flex;
+    margin-bottom: 12px;
+}
+
+#descricao-beneficio {
+    color: #1d2939 !important;
+    letter-spacing: -.2px;
+    font-family: Inter, sans-serif;
+    font-size: 17px !important;
+    line-height: 1.5em;
+    margin-bottom: 0px !important;
+}
+
+#svg-beneficio {
+    width: 24px;
+    height: 24px;
+    color: #3281de;
+    margin-right: 14px;
+    margin-bottom: -2px;
+}
+
+#matricula-button {
+    width: 100%;
+    height: 50px;
+    border-radius: 8px;
+    border: solid rgba(0, 0, 0, 0);
+    background-color: #1570ef;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+    color: white;
+    margin-top: 10px;
+}
+
+#container-rodape {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 232px 0 150px;
+}
+
+#img-rodape {
+    width: 88px;
+    margin-bottom: 20px;
+}
+
+#titulo-rodape {
+    color: #fcfcfd;
+    letter-spacing: -.2px;
+    font-family: Bitter, serif;
+    font-size: 26px;
+    font-weight: 900 !important;
+    font-weight: bold;
+}
+
+#sub-titulo-rodape {
+    color: #9b9b9b;
+    text-align: center;
+    font-family: Inter, sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+@media (max-width: 991px) {
+
+    #inscrição-mobile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 18px;
+        margin: 60px auto;
+        width: 430px;
+        height: 56px;
+        background-color: #2e69c9;
+        border: solid 0px;
+        border-radius: 4px;
+        font-weight: 500;
+    }
+
+    #titulo2 {
+        /* Primeiro passo: definir um degradê como fundo */
+        background-image: linear-gradient(135deg, #362ca8, #6594e0 50%) !important;
+        font-size: 0px;
+        /* Segundo passo: apagar do fundo tudo que não estiver imediatamente atrás de texto */
+        background-clip: text;
+        -webkit-background-clip: text; /* Alguns navegadores precisam do prefixo */
+        /* Terceiro passo: apagar o texto, deixando apenas o fundo atrás dele */
+        -webkit-text-fill-color: transparent;
+        /* Cor que contraste com o degradê, caso o navegador não suporte `background-clip: text` */
+        color: black;
+        font-weight: 700;
+        margin-bottom: 0;
+    }
+
+    #informacoes {
+        margin-top: -500px !important;
+    }
+
+    #titulo2-mobile {
+        /* Primeiro passo: definir um degradê como fundo */
+        background-image: linear-gradient(90deg, #f16e41, #ff5593) !important;
+        font-size: 30px;
+        /* Segundo passo: apagar do fundo tudo que não estiver imediatamente atrás de texto */
+        background-clip: text;
+        -webkit-background-clip: text; /* Alguns navegadores precisam do prefixo */
+        /* Terceiro passo: apagar o texto, deixando apenas o fundo atrás dele */
+        -webkit-text-fill-color: transparent;
+        /* Cor que contraste com o degradê, caso o navegador não suporte `background-clip: text` */
+        color: black;
+        font-weight: 700;
+        margin-bottom: 16px;
+    }
+
+    #descricao-do-curso-mobile {
+        font-size: 16px;
+    }
+
+    #resumo-sacramentos {
+        margin-bottom: 0px !important;
+    }
+
+    #container {
+        padding: 0px 0px !important;
+    }
+
+    #descricao-do-curso {
+        font-size: 0px;
+        margin: 0;
+    }
+
+
+    #seteinstrumentos {
+        width: 50%;
+    }
+
+    #container {
+        margin-top: 0px !important;
+    }
+
+    .textDiv {
+        position: relative;
+        margin-top: 100px;
+        margin-bottom: 80px;
+        display: flex;
+        align-items: center;
+        padding: 0 16px;
+    }
+
+    #container {
+        width: 100% !important;
+        margin-left: 0px !important;
+    }
+
+    #container-novo {
+        width: 100% !important;
+        margin-left: 0px !important;
+        padding-top: 0px !important;
+    }
+
+    
+    .my-container {
+        flex-direction: column-reverse !important;
+    }
+    
+    video {
+        width: 100%;
+        scale: 300%;
+        transform: translate(-10%, 15%); /* aplica o zoom */
+    }
+    
+    #avaliacao {
+        align-items: baseline;
+        margin-bottom: 44px;
+    }
+    
+    #subcompra {
+        flex-direction: column-reverse;
+        align-items: baseline;
+    }
+    
+    #compra {
+        width: 100%;
+    }
+    
+    #subbotoes {
+        flex-flow: column;
+        width: 100%;
+    }
+
+    #container-feedback {
+        margin: 0;
+        padding-top: 100px;
+        grid-column-gap: 3%;
+        flex-direction: row-reverse;
+    
+    }
+
+    #container-1-feed {
+        width: 0% ;
+        padding: 0px !important;
+        margin-left: -18px;
+        
+    }
+
+    #container-2-feed {
+        width: 48% ;
+        padding: 0px !important;
+    }
+
+    #container-3-feed {
+        width: 48% ;
+        padding: 0px !important;
+    }
+
+    .primeiro-col-md-4 {
+        border: 0px solid #ffffff00 !important;
+        padding: 0px 0px 0px !important;
+        background-color: #18191b00 !important;
+        width: 0% !important;
+        height: 0px !important;
+        border-radius: 0px !important;
+        margin-bottom: 0px !important;
+    }
+
+    .segundo-col-md-4 {
+        border: 0px solid #ffffff00 !important;
+        padding: 0px 0px 0px !important;
+        background-color: #18191b00 !important;
+        width: 0% !important;
+        height: 0px !important;
+        border-radius: 0px !important;
+        margin-bottom: 0px !important;
+    }
+
+    #texto-feedback {
+        color: rgba(255, 255, 255, 0);
+        font-size: 0px;
+        line-height: 0%;
+        padding: 0 !important;
+    }
+    
+    #user-feedback {
+        color: #bbbbbb00;
+        font-size: 0px;
+        font-weight: 0;
+        padding: 0 !important;
+    }
+}
+
+@media (max-width: 769px) {
+    #seteinstrumentos {
+        width: 100%;
+    }
+    
+    #textseteinstrumentos {
+        max-width: 100% !important;
+    }
+    
+    #relevancia {
+        margin-bottom: 60px;
+    }
+
+    #informacoes {
+        margin-top: -350px !important;
+    }
+
+    .col-md-4 {
+        width: 100% !important;
+    }
+    
+    #concerto {
+        flex-direction: column;
+        align-items: baseline;
+    }
+    
+    #trailer {
+        position: absolute;
+    }
+    
+    #subtrailer {
+        height: 48px;
+        width: 100%;
+        padding-left:
+        50px; position:relative;
+        display:flex;
+        align-items:center;
+        justify-content: center;
+    }
+    
+    #vertrailer {
+        margin-bottom: 20px;
+        width: 100%;
+        align-items: center;
+        position: relative;
+    }
+    
+    #titulo {
+        font-size: 35px;
+    }
+
+    #titulo-pc-compra {
+        color: #fcfcfd;
+        -webkit-text-fill-color: transparent;
+        background-image: linear-gradient(90deg, #f16e41, #ff5593);
+        background-clip: text;
+        font-size: 35px;
+        font-weight: 700;
+    }
+    
+    #sub-titulo-pc-compra {
+        color: #ffffff80;
+        letter-spacing: 0;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+
+    #container-2-feed {
+        width: 0% ;
+        padding: 0px !important;
+    }
+
+    #container-3-feed {
+        width: 100% ;
+        padding: 0px !important;
+    }
+
+    .terceiro-col-md-4 {
+        border: 0px solid #ffffff00 !important;
+        padding: 0px 0px 0px !important;
+        background-color: #18191b00 !important;
+        width: 0% !important;
+        height: 0px !important;
+        border-radius: 0px !important;
+        margin-bottom: 0px !important;
+    }
+
+    .quarto-col-md-4 {
+        border: 0px solid #ffffff00 !important;
+        padding: 0px 0px 0px !important;
+        background-color: #18191b00 !important;
+        width: 0% !important;
+        height: 0px !important;
+        border-radius: 0px !important;
+        margin-bottom: 0px !important;
+    }
+
+    #texto-feedback-2 {
+        color: rgba(255, 255, 255, 0);
+        font-size: 0px;
+        line-height: 0%;
+        padding: 0 !important;
+    }
+    
+    #user-feedback-2 {
+        color: #bbbbbb00;
+        font-size: 0px;
+        font-weight: 0;
+        padding: 0 !important;
+    }
+}
+
+@media (max-width: 568px) {
+
+    #informacoes {
+        margin-top: -250px !important;
+    }
+
+    #inscrição-mobile {
+        width: 100%;
+    }
+
+    #texto-feedback {
+        color: rgba(255, 255, 255, 0);
+        font-size: 0px;
+        line-height: 165%;
+    }
+
+    #user-feedback {
+        color: #bbbbbb00;
+        font-size: 0px;
+        font-weight: 0;
+    }
+
+
+    #mostrarmais-feedback {
+        background-color: #18191b;
+        border: 1px solid #ffffff1a;
+        justify-content: center;
+        width: 260px;
+        font-weight: 400;
+        color: #ffffffa4 !important;
+        max-width: 100%;
+        border-radius: 5px;
+        height: 48px;
+        padding: 12px 4px;
+        display: flex;
+        align-items: center;
+        margin: auto;
+        margin-top: 6px;
+    }
+
+    #card-compra {
+        background-color: #fcfcfd;
+        width: 100%;
+        padding: 40px;
+        margin: auto;
+        border-radius: 12px;
+        color: #101828;
+    }
+
+    #parcelamento {
+        font-size: 18px;
+        margin-right: 8px;
+        line-height: 1;
+        margin-bottom: -14px;
+        font-weight: 800;
+    }
+    
+    #text-price {
+        color: #101828;
+        letter-spacing: -1px;
+        margin-bottom: 4px;
+        font-family: Inter, sans-serif;
+        font-size: 46px;
+        font-weight: 700;
+    }
+    
+    #text-price-cents {
+        color: #101828;
+        letter-spacing: -2px;
+        margin-bottom: -8px;
+        font-family: Inter, sans-serif;
+        font-size: 24px;
+        font-weight: 800;
+    }
+
+    #heading-compra {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: column;
+        margin-bottom: 32px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 360px) {
+    #text-price {
+        font-size: 34px;
+    }
+}
